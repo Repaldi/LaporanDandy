@@ -12,6 +12,7 @@ class laporanController extends Controller
         $departemen = \App\Models\Departemen::all();
        return view('laporan.index',['data_laporan' => $data_laporan,
                                     'departemen' => $departemen]);
+                                    #tstldsdlsd
                                  
     }
 
