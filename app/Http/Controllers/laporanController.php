@@ -10,10 +10,9 @@ class laporanController extends Controller
     {
         $data_laporan = \App\Models\Laporan::all();
         $departemen = \App\Models\Departemen::all();
-       # $sub_departemen = \App\Models\SubDepartemen::where('id_departemen', $departemen->id);
-        return view('laporan.index',['data_laporan' => $data_laporan,
+       return view('laporan.index',['data_laporan' => $data_laporan,
                                     'departemen' => $departemen]);
-                                   # 'sub_departemen' => $sub_departemen]);
+                                 
     }
 
     public function create(Request $request)
