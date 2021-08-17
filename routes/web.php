@@ -19,4 +19,7 @@ Route::get('/', function () {
 });
 Route::get('/laporan','laporanController@index');
 Route::post('laporan/create','laporanController@create');
-Route::get('/delete/{id}','laporanController@deletelaporan')->name('deletelaporan');
+Route::get('/getsubdepartemen', [laporanController::class, 'getSubDepartemen']);
+
+Route::get('/laporan/delete/{id}','laporanController@destroy')->name('deleteLaporan');
+Route::patch('/laporan/update','laporanController@update')->name('updateLaporan');
