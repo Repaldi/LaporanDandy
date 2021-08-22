@@ -14,6 +14,11 @@ class SubDepartemen extends Model
 
     public function departemen()
     {
-      return $this->belongsTo(Departemen::class);
+      return $this->belongsTo('App\Models\Departemen','id_departemen','id');
+    }
+    public function laporan()
+    {
+      
+      return $this->hasMany('App\Models\Laporan','id_laporan','id');
     }
 }

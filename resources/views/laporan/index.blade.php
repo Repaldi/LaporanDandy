@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
     <HEAD>
         <title>Laporan Bulanan</title>
@@ -35,8 +36,8 @@
         <tr>
             <td>{{$laporan->id}}</td>
             <td>{{$laporan->nama}}</td>
-            <td>{{$laporan->id_departemen}}</td>
-            <td>{{$laporan->id_subdepartemen}}</td>
+            <td>{{$laporan->departemen->nama_departemen}}</td>
+            <td>{{$laporan->sub_departemen->nama_sub}}</td>
             <td>{{$laporan->kegiatan}}</td>
             <td>{{$laporan->tgl}}</td>
             <td>     
